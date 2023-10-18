@@ -3,14 +3,16 @@ public abstract class Vehicle {
     private String make;
     private String model;
     private String color;
-    private double price;
+    //Note: assignment instructions somewhat ambiguous, I moved price attribute to sedan/suv class
+    // to be initialized there
+    //was unable to find solution to setting this attribute without changing it to protected
+    //or using a setPrice
     private int year;
     //Constructor
-    public Vehicle(String make, String model, String color,double price, int year){
+    public Vehicle(String make, String model, String color, int year){
         this.make=make;
         this.model=model;
         this.color=color;
-        this.price=price;
         this.year=year;
 
     }
@@ -49,9 +51,9 @@ public abstract class Vehicle {
     //methods
     @Override
     public String toString(){
-        return String.format("----Vehicle Information----\nMake:%s\nModel:%s\nColor:%s\nPrice:%4.2f\nYear:%d",getMake(), getModel(),getColor(), price,getYear());
+        return String.format("----Vehicle Information----\nMake:%s\nModel:%s\nColor:%s\nYear:%d",getMake(), getModel(),getColor(),getYear());
     }
-    public abstract void setPrice(double price);
+    public abstract double setPrice(double price);
 
     public abstract String getType();
 

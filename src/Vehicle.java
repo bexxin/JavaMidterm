@@ -15,6 +15,8 @@ public abstract class Vehicle {
 
     }
     //method
-    public String
+    public String toString(){
+        return String.format("----Vehicle Information----\nMake:%s\nModel:%s\nColor:%s\nPrice:%4.2f\nYear:%d",make, model,color, price,year);
+    }
 
 }

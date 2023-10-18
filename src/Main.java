@@ -10,6 +10,7 @@ public class Main {
         //loop to create multiple vehicles and store in the arraylist.
         while(true) {
             //Get attribute information from user.
+
             String type = JOptionPane.showInputDialog("Is this for an SUV or a Sedan(please enter SUV or SED)?:");
             String make = JOptionPane.showInputDialog("Please enter make:");
             String model = JOptionPane.showInputDialog("Please enter model:");

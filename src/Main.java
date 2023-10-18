@@ -18,7 +18,7 @@ public class Main {
             int year = Integer.parseInt(JOptionPane.showInputDialog("Enter Year:"));
             double price = Double.parseDouble(JOptionPane.showInputDialog("Enter price:"));
             //Create vehicle object based on user input
-            Vehicle vehicle = null;
+            Vehicle vehicle;
             //call appropriate constructor based on type input
             if (type.equalsIgnoreCase("SUV")) {
                 vehicle = new SUV(make, model, color, price, year, type);

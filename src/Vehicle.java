@@ -46,9 +46,14 @@ public abstract class Vehicle {
         this.year = year;
     }
 
-    //method
+    //methods
+    @Override
     public String toString(){
-        return String.format("----Vehicle Information----\nMake:%s\nModel:%s\nColor:%s\nPrice:%4.2f\nYear:%d",make, model,color, price,year);
+        return String.format("----Vehicle Information----\nMake:%s\nModel:%s\nColor:%s\nPrice:%4.2f\nYear:%d",getMake(), getModel(),getColor(), price,getYear());
     }
+    public abstract void setPrice(double price);
+
+    public abstract String getType();
+
 
 }
